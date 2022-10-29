@@ -47,7 +47,7 @@ public class Assert01 {
         String actualResult = page.url();
 
         System.out.println("actualResult: " + actualResult);
-        Assertions.assertTrue(actualResult.contains(expectedResult)); //JUnit Assertion
+       // Assertions.assertTrue(actualResult.contains(expectedResult)); //JUnit Assertion
         assertThat(page).hasURL(URL); //Playwright Assertions with hasURL()
     }
 
@@ -56,7 +56,7 @@ public class Assert01 {
         page.navigate("https://www.google.com");
         String expectedResult = "Google";
         String actualResult = page.title();
-        Assertions.assertEquals(actualResult,expectedResult);
+       // Assertions.assertEquals(actualResult,expectedResult);
         assertThat(page).hasTitle("Google");//Playwright Assertions with hasTitle()
     }
 
